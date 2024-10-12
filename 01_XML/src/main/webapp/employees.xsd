@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"> 
+	<element name="종업원들">    
+		<complexType>
+			<sequence>
+				<element name="종업원" maxOccurs="unbounded">
+					<complexType>
+						<sequence> 
+							<element name="이름" type="string"/>
+							<element name="자식이름" type="string"  minOccurs="0" maxOccurs="10"/>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>   
+		</complexType>
+	</element> 
+</schema>
+
+
+<!-- 
+maxOccurs="unbounded" : 무제한으로 넣을 수 있음
+안쓰면 자동으로 1(1개만 넣을 수 있음)
+minOccurs="0" maxOccurs="10" : 0~10개 쓸 수 있음
+둘다 없으면 무조건 딱 1개만 있어야 함(없어도 문제, 많아도 문제)
+ 
+-->

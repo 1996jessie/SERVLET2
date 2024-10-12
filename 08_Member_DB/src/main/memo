@@ -1,0 +1,20 @@
+drop sequence seqmem;
+drop table mymem purge;
+
+create sequence seqmem
+start with 1
+minvalue 1
+increment by 1
+nocache;
+
+create table mymem(
+	id number primary key,
+	name varchar2(20),
+	password varchar2(20)
+);
+
+insert into mymem values(seqmem.nextval,'김철수','1234');
+insert into mymem values(seqmem.nextval,'이서현','5678');
+
+commit;
+select * from mymem;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="쪽지">
+		<complexType> 
+			<sequence> 
+				<element name="수신" type="string"/> 
+				<element name="발신" type="string"/>
+				<element name="제목" type="string"/>
+				<element name="내용" type="string"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema> 
+
+
+<!-- 
+<complexType> : 쪽지라는 이름을 가진 요소가 어떤 속성이나 자식을 가질 수 있도록 설정
+시퀀스 : 자식에 순서가 있다(수발제내 순서로 적어야 함) 
+
+-->

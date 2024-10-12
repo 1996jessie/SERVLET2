@@ -1,0 +1,5 @@
+
+5월 16, 2024 12:01:40.737 NEW SESSION
+5월 16, 2024 12:01:40.737 Created TensorFlow Lite XNNPACK delegate for CPU.
+5월 16, 2024 12:22:54.73 [5576:10680:0516/122254.073:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
+5월 16, 2024 12:42:36.176 [5576:10680:0516/124236.176:ERROR:interface_endpoint_client.cc(707)] Message 1 rejected by interface blink.mojom.WidgetHost
